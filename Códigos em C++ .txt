@@ -1,0 +1,33 @@
+1 - Quais são os dados de entrada necessários?
+2 - O que devo fazer com esse dado?
+3 - Quais são as restrições deste problema?
+4 - Quais são os resultados esperados?
+5 - Qual a sequência de passos necessário?
+
+
+
+//--------------------------------------///-------------------------------///-------------------------///------------------------------------//
+| 1 - Quais são os dados de entrada necessários?
+	Nome, número de horas trabalhadas											     |
+| 2 - O que devo fazer com esse dado?
+	Com os dados de quantas horas trabalhadas o funcionário tem, calcular o salário dele, sabendo que ele ganha 10 por hora; Se houver
+	exceso de mais de 50hrs, armazenar esse excesso na variável E, sabendo que cada hora excedente vale *20												     |
+| 3 - Quais são as restrições deste problema?	
+	Quando o número de horas ultrapassar 50, armazenar o excesso em E (cada hora excedente vale 20). Se não tiver, zerar variável E											     |
+| 4 - Quais são os resultados esperados?
+	Nome do funcionário, horas trabalhadas, valor do seu salário e caso houver, disponibilizar o excedente												     |
+| 5 - Qual a sequência de passos necessário?	
+	Entrada c = nome
+	Entrada N = hrs_trabalhadas
+	salario = hrs_trabalhadas * 10
+	if hrs_trabalhadas < 50
+		e = 50 - hrs_trabalhadas
+		valor_ultrapassado = e * 20
+		valor_total = valor_ultrapassado + salario
+		output <"Salario total", valor_total>    											     |
+|		output <"Salario excedente", valor_ultrapassado>
+	else
+		output <"Salario total", valor_total>															     |	
+//--------------------------------------///-------------------------------///-------------------------///------------------------------------//
+
+
