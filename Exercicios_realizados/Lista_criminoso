@@ -1,0 +1,63 @@
+#include <stdio.h>
+/*
+# --------------------------------------------------------------------------------------------------------------------------
+# Nome: Lê Alves
+# Programa: C++
+# Data: 05/12/21
+# Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+"Telefonou para a vítima?"
+"Esteve no local do crime?"
+"Mora perto da vítima?"
+"Devia para a vítima?"
+"Já trabalhou com a vítima?" 
+#O programa deve no final emitir uma classificação sobre a participação da pessoa 
+#no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como 
+#"Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado 
+#como "Inocente".nominado B 
+#--------------------------------------------------------------------------------------------------------------*/
+int main()
+{
+   int x[4];
+   int cont = 0;
+   int dados;
+  
+   
+    printf ("Selecione 0 para 'nao' e 1 para 'sim' :\n ");
+    
+    printf ("Telefonou para a vitima? :\n ");
+    scanf ("%d", &x[cont]);
+    cont++;
+    printf ("Esteve no local do crime?\n ");
+    scanf ("%d", &x[cont]);
+    cont++;
+	printf ("Mora perto da vitima?\n ");
+    scanf ("%d", &x[cont]);
+    cont++;
+    printf ("Devia para a vitima?\n ");
+    scanf ("%d", &x[cont]);
+    cont++;
+    printf ("Ja trabalhou com a vitima\n ");
+    scanf ("%d", &x[cont]);
+    cont++;
+    
+    dados = x[0] +  x[1] + x[2] + x[3] + x[4]; 
+    
+    if (dados <= 2)
+    	{
+		
+    	printf ("Suspeito");
+    	}
+    	
+    if (dados > 2 && dados <=4)
+    	{
+		
+    	printf ("Cumplice");
+    	}
+    
+    if (dados == 5)
+    	{
+		
+    	printf ("Assassino");
+    	}
+    return 0;
+}

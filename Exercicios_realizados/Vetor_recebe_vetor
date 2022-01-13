@@ -1,0 +1,35 @@
+#include <stdio.h>
+/*
+# --------------------------------------------------------------------------------------------------------------------------
+# Nome: Lê Alves
+# Programa: C++
+# Data: 04/12/21
+# Crie um vetor com posição 10, denominado A, que receba dados do usuário. 
+#Multiplicando cada elemento do vetor por 10, armazenando esse valor em um outro vetor denominado B 
+#--------------------------------------------------------------------------------------------------------------*/
+int main()
+{
+   float A[9];
+   float b[9];
+   int i;
+   int p; // contador para usuário
+   p = 1;
+   
+   for (i=0;i<=9;i++)
+   {
+   
+   	printf ("\nQual o %d numero? ",p);
+   	scanf ("%f", &A[i]);
+	//printf ("O valor = %2.f\n", A[i]);
+	p++;	
+	}
+	
+	for (i=0;i<=9;i++)
+	{
+		b[i] = A[i];
+		printf ("\n\n B = %2.f\n", b[i]*10);
+	}
+			
+	
+    return 0;
+}
