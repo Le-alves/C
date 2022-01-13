@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main()
+{
+/* -----------------------ENTRADA DE DADOS-------------------------------------------*/   
+ float p1, p2, p3, media;
+ 
+ printf("Digite a nota na primeira prova: ");
+ scanf("%f", &p1);
+ printf("Digite a nota na segunda prova: ");
+ scanf("%f", &p2);
+ printf("Digite a nota na terceira prova: ");
+ scanf("%f", &p3);
+/*----------------------------PROCESSO------------------------------------------------*/
+
+media = (p1 + p2 + p3)/3;
+ 
+ if (media > 60.0)
+ {
+ 	
+    printf(" Aluno aprovado com media final = %4.2f", media);
+ 	
+ }
+else
+{
+	
+	printf(" Aluno reprovado com media final = %4.2f", media);
+
+ }   
+/*---------------------------SAÍDA DE DADOS-------------------------------------------*/
+
+ 
+ 	return 0;
+}

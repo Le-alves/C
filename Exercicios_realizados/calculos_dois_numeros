@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+/* -----------------------ENTRADA DE DADOS-------------------------------------------*/   
+ float x, y; 
+ 
+ printf("Digite o valor para x : ");
+ scanf("%f", &x);
+ printf("Digite o valor para y : ");
+ scanf("%f", &y);
+/*----------------------------PROCESSO------------------------------------------------*/
+ 
+   
+/*---------------------------SAÍDA DE DADOS-------------------------------------------*/
+
+ printf("a soma sera de: %.f", x + y);
+ printf("\n a subtracao sera de: %.f", x - y);
+ printf("\n a divisao sera de: %.f", x / y);
+ printf("\n a multiplicacao sera de: %.f", x * y);
+ 
+ printf("\n a media sera de: %.2f", (float) (x + y)/2);	 
+ printf("\n a exponenciacao sera de: %f", pow (x,y));
+
+ 	return 0;
+}

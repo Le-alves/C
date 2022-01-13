@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>	
+
+int main()
+{
+/* -----------------------ENTRADA DE DADOS-------------------------------------------*/   
+ 
+ 		float a, b, c, d;
+ 	
+ 		int x, y, z;
+ 	
+ 		x =3;
+ 		y =35;
+ 		z =5;
+ 
+/*----------------------------PROCESSO------------------------------------------------*/
+ 
+ 		a = (pow(x,3) + pow(y,1/5)) / 5 + 3 * z * pow(x,4);
+ 	
+ 		b = ((-2 * x) * pow (y,5)) - (z * (pow (x,2))) / 8 + pow(z,4) * pow(x,3);
+	 
+		c = 5 * pow(y,-5) + z * pow(y,4) * pow(x,-2);
+	
+		d = (-y + sqrt(pow(y,2) - (4*x) * z)) / 2 * z;
+ 	
+	 
+/*---------------------------SAÍDA DE DADOS-------------------------------------------*/
+
+      printf("O numero %5.2f \n ", a);
+      
+	  printf("O numero %5.2f \n ", b);
+      
+      printf("O numero %5.2f \n ", c);
+      
+	  printf("O numero %5.2f \n ", d);
+	  
+ 		return 0;
+}

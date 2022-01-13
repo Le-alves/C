@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+/* -----------------------ENTRADA DE DADOS-------------------------------------------*/   
+ int x;
+ 
+ printf("Digite o valor inteiro: ");
+ scanf("%d", &x);
+ 
+/*----------------------------PROCESSO------------------------------------------------*/
+ 
+ if (x % 3== 0)
+ {
+    printf(" O valor %d e multiplo de 3", x);
+ 	
+ }
+else
+{
+	printf(" O valor %d nao multiplo de 3", x);
+   }   
+/*---------------------------SAÍDA DE DADOS-------------------------------------------*/
+
+ 
+ 	return 0;
+}

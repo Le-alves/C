@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+/* -----------------------ENTRADA DE DADOS-------------------------------------------*/   
+ float salarioFixo, comissao, valorComissao, vendas; 
+ 
+ printf("Digite o valor do salario do funcionario: ");
+ scanf("%f", &salarioFixo);
+ printf("Digite o valor de vendas feitas: ");
+ scanf("%f", &vendas);
+ 
+/*----------------------------PROCESSO------------------------------------------------*/
+ comissao = 0.0;
+ 
+ if (vendas > 5.000)
+ {
+ 	comissao = 0.05;
+	 valorComissao = salarioFixo + (vendas * comissao);
+ 	
+ }
+   
+/*---------------------------SAÍDA DE DADOS-------------------------------------------*/
+ printf("%.2f", valorComissao);
+ 
+ 	return 0;
+}
